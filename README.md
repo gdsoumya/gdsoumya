@@ -44,15 +44,15 @@ You can use the website to generate badges: https://shields.io/
 <br/>
   <a href="https://github.com/litmuschaos/litmus">
       <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=litmuschaos&repo=litmus&show_owner=true" alt="Litmus Chaos"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <a href="https://github.com/gdsoumya/NFTransit">
+ <a href="https://github.com/argoproj/argo-cd">
       <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=argoproj&repo=argo-cd&show_owner=true" alt="argo-cd"></a>
 <br/><br/>
- <a href="https://github.com/renproject/multichain-proxy">
+ <a href="https://github.com/gdsoumya/uptime-monitor-rs">
       <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=gdsoumya&repo=uptime-monitor-rs&show_owner=true" alt="uptiome-monitor-rs"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <a href="https://github.com/gdsoumya/NFTransit">
+ <a href="https://github.com/gdsoumya/rag-chat">
       <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=gdsoumya&repo=rag-chat&show_owner=true" alt="rag-chat"></a>
 <br/><br/>
 <a href="https://github.com/gdsoumya/better_ci">
       <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=gdsoumya&repo=better_ci&show_owner=true" alt="better_ci"></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/argoproj/argo-cd">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/gdsoumya/NFTransit">
       <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=gdsoumya&repo=NFTransit&show_owner=true" alt="NFTransit"></a>
