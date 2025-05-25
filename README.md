@@ -25,18 +25,18 @@ You can use the website to generate badges: https://shields.io/
 <br/>
 <p>
   <img width="12%" src="https://www.vectorlogo.zone/logos/golang/golang-ar21.svg">
-  <img width="12%" src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg">
   <img width="12%" src="https://www.vectorlogo.zone/logos/ethereum/ethereum-ar21.svg">
-  <img width="12%" src="https://brandpalettes.com/wp-content/uploads/2021/05/tezos-02.png?ezimgfmt=rs:660x234/rscb1/ng:webp/ngcb1">
   <img width="12%" src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg">
   <img width="12%" src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg">
-  <br />
+  <img width="12%" src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg">
   <img width="12%" src="https://www.vectorlogo.zone/logos/graphql/graphql-ar21.svg">
+  <br />
   <img width="12%" src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg">
   <img width="12%" src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg">
   <img width="12%" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg">
   <img width="12%" src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-ar21.svg">
   <img width="12%" src="https://www.vectorlogo.zone/logos/linux/linux-ar21.svg">
+  <img width="12%" src="https://brandpalettes.com/wp-content/uploads/2021/05/tezos-02.png?ezimgfmt=rs:660x234/rscb1/ng:webp/ngcb1">
 </p>
 <br/>
 
