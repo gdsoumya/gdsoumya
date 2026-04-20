@@ -47,8 +47,8 @@ You can use the website to generate badges: https://shields.io/
  <a href="https://github.com/argoproj/argo-cd">
       <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=argoproj&repo=argo-cd&show_owner=true" alt="argo-cd"></a>
 <br/><br/>
- <a href="https://github.com/gdsoumya/uptime-monitor-rs">
-      <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=gdsoumya&repo=uptime-monitor-rs&show_owner=true" alt="uptiome-monitor-rs"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="https://github.com/gdsoumya/protomcp">
+      <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=gdsoumya&repo=protomcp&show_owner=true" alt="protomcp"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <a href="https://github.com/gdsoumya/rag-chat">
       <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=gdsoumya&repo=rag-chat&show_owner=true" alt="rag-chat"></a>
 <br/><br/>
