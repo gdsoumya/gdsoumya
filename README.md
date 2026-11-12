@@ -50,12 +50,12 @@ You can use the website to generate badges: https://shields.io/
 ## Pinned Repositories
 <br/>
 <!-- cards:start -->
-<a href="https://github.com/argoproj/argo-cd"><img width="45%" src="./cards/argoproj-argo-cd.svg" alt="argoproj/argo-cd"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/gdsoumya/protomcp"><img width="45%" src="./cards/gdsoumya-protomcp.svg" alt="gdsoumya/protomcp"></a>
+<a href="https://github.com/argoproj/argo-cd"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/argoproj-argo-cd-dark.svg"><img width="45%" src="./cards/argoproj-argo-cd.svg" alt="argoproj/argo-cd"></picture></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/gdsoumya/protomcp"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/gdsoumya-protomcp-dark.svg"><img width="45%" src="./cards/gdsoumya-protomcp.svg" alt="gdsoumya/protomcp"></picture></a>
 <br/><br/>
-<a href="https://github.com/gdsoumya/openarr"><img width="45%" src="./cards/gdsoumya-openarr.svg" alt="gdsoumya/openarr"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/litmuschaos/litmus"><img width="45%" src="./cards/litmuschaos-litmus.svg" alt="litmuschaos/litmus"></a>
+<a href="https://github.com/gdsoumya/openarr"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/gdsoumya-openarr-dark.svg"><img width="45%" src="./cards/gdsoumya-openarr.svg" alt="gdsoumya/openarr"></picture></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/litmuschaos/litmus"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/litmuschaos-litmus-dark.svg"><img width="45%" src="./cards/litmuschaos-litmus.svg" alt="litmuschaos/litmus"></picture></a>
 <br/><br/>
-<a href="https://github.com/gdsoumya/plusultra"><img width="45%" src="./cards/gdsoumya-plusultra.svg" alt="gdsoumya/plusultra"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/gdsoumya/NFTransit"><img width="45%" src="./cards/gdsoumya-NFTransit.svg" alt="gdsoumya/NFTransit"></a>
+<a href="https://github.com/gdsoumya/plusultra"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/gdsoumya-plusultra-dark.svg"><img width="45%" src="./cards/gdsoumya-plusultra.svg" alt="gdsoumya/plusultra"></picture></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/gdsoumya/NFTransit"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/gdsoumya-NFTransit-dark.svg"><img width="45%" src="./cards/gdsoumya-NFTransit.svg" alt="gdsoumya/NFTransit"></picture></a>
 <!-- cards:end -->

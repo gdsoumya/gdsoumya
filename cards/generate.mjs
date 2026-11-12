@@ -30,7 +30,12 @@ const ICON_STAR =
 const ICON_FORK =
   "M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z";
 
-function card(r) {
+const THEMES = {
+  light: ".bg{fill:#fff;stroke:#d0d7de}.name{fill:#0969da}.desc,.muted,.icon{fill:#59636e}",
+  dark: ".bg{fill:#0d1117;stroke:#3d444d}.name{fill:#4493f8}.desc,.muted,.icon{fill:#9198a1}",
+};
+
+function card(r, theme) {
   const lang = r.primaryLanguage;
   const desc = wrap(r.description ?? "");
   let x = 16;
@@ -48,9 +53,9 @@ function card(r) {
   }
   return `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="130" viewBox="0 0 400 130" role="img" aria-label="${esc(r.nameWithOwner)}">
 <style>
-  .bg{fill:#fff;stroke:#d0d7de}.name{fill:#0969da;font:600 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-  .desc,.muted{font:12px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}.desc{fill:#59636e}.muted{fill:#59636e}.icon{fill:#59636e}
-  @media (prefers-color-scheme:dark){.bg{fill:#0d1117;stroke:#3d444d}.name{fill:#4493f8}.desc,.muted{fill:#9198a1}.icon{fill:#9198a1}}
+  .name{font:600 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  .desc,.muted{font:12px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  ${theme}
 </style>
 <rect class="bg" x="0.5" y="0.5" width="399" height="129" rx="6"/>
 <path transform="translate(16 16)" class="icon" d="${ICON_REPO}"/>
@@ -89,9 +94,11 @@ const dir = new URL(".", import.meta.url);
 for (const f of readdirSync(dir)) if (f.endsWith(".svg")) rmSync(new URL(f, dir));
 
 const links = repos.map((r) => {
-  const file = `${r.nameWithOwner.replace("/", "-")}.svg`;
-  writeFileSync(new URL(file, dir), card(r));
-  return `<a href="${r.url}"><img width="45%" src="./cards/${file}" alt="${esc(r.nameWithOwner)}"></a>`;
+  const base = r.nameWithOwner.replace("/", "-");
+  writeFileSync(new URL(`${base}.svg`, dir), card(r, THEMES.light));
+  writeFileSync(new URL(`${base}-dark.svg`, dir), card(r, THEMES.dark));
+  // GitHub swaps the <source> to follow its own theme setting, not just the OS
+  return `<a href="${r.url}"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/${base}-dark.svg"><img width="45%" src="./cards/${base}.svg" alt="${esc(r.nameWithOwner)}"></picture></a>`;
 });
 
 const rows = [];
