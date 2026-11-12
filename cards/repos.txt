@@ -2,5 +2,5 @@ argoproj/argo-cd
 gdsoumya/protomcp
 gdsoumya/openarr
 litmuschaos/litmus
-gdsoumya/rag-chat
+gdsoumya/plusultra
 gdsoumya/NFTransit
