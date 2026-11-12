@@ -56,6 +56,6 @@ You can use the website to generate badges: https://shields.io/
 <a href="https://github.com/gdsoumya/openarr"><img width="45%" src="./cards/gdsoumya-openarr.svg" alt="gdsoumya/openarr"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/litmuschaos/litmus"><img width="45%" src="./cards/litmuschaos-litmus.svg" alt="litmuschaos/litmus"></a>
 <br/><br/>
-<a href="https://github.com/gdsoumya/rag-chat"><img width="45%" src="./cards/gdsoumya-rag-chat.svg" alt="gdsoumya/rag-chat"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/gdsoumya/plusultra"><img width="45%" src="./cards/gdsoumya-plusultra.svg" alt="gdsoumya/plusultra"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/gdsoumya/NFTransit"><img width="45%" src="./cards/gdsoumya-NFTransit.svg" alt="gdsoumya/NFTransit"></a>
 <!-- cards:end -->
