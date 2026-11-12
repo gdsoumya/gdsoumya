@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [master]
-    paths: [cards/generate.mjs]
+    paths: [cards/generate.mjs, cards/repos.txt]
 
 permissions:
   contents: write

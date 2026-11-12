@@ -1,6 +1,6 @@
-// Renders the profile's pinned repos as GitHub-style SVG cards and rewrites the
-// README block between the cards markers to show them in pin order.
-// Usage: GITHUB_TOKEN=... GITHUB_REPOSITORY_OWNER=<user> node cards/generate.mjs
+// Renders the repos listed in cards/repos.txt as GitHub-style SVG cards and rewrites
+// the README block between the cards markers to show them in that order.
+// Usage: GITHUB_TOKEN=... node cards/generate.mjs
 import { readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 
 const esc = (s) =>
@@ -61,26 +61,29 @@ ${footer.join("\n")}
 `;
 }
 
-async function pinnedRepos(login) {
+async function fetchRepo(full) {
+  const [owner, name] = full.split("/");
   const res = await fetch("https://api.github.com/graphql", {
     method: "POST",
     headers: { Authorization: `bearer ${process.env.GITHUB_TOKEN}`, "User-Agent": "readme-cards" },
     body: JSON.stringify({
-      query: `query($login:String!){user(login:$login){pinnedItems(first:6,types:REPOSITORY){nodes{... on Repository{
-        nameWithOwner url description stargazerCount forkCount primaryLanguage{name color}}}}}}`,
-      variables: { login },
+      query: `query($o:String!,$n:String!){repository(owner:$o,name:$n){
+        nameWithOwner url description stargazerCount forkCount primaryLanguage{name color}}}`,
+      variables: { o: owner, n: name },
     }),
   });
   const { data, errors } = await res.json();
-  if (!res.ok || errors || !data?.user) throw new Error(`${res.status} ${JSON.stringify(errors)}`);
-  return data.user.pinnedItems.nodes;
+  if (!res.ok || errors || !data?.repository) throw new Error(`${full}: ${res.status} ${JSON.stringify(errors)}`);
+  return data.repository;
 }
 
-const login = process.env.GITHUB_REPOSITORY_OWNER;
-if (!process.env.GITHUB_TOKEN || !login) throw new Error("GITHUB_TOKEN and GITHUB_REPOSITORY_OWNER are required");
+if (!process.env.GITHUB_TOKEN) throw new Error("GITHUB_TOKEN is required");
 
-const repos = await pinnedRepos(login);
-if (!repos.length) throw new Error(`no pinned repos for ${login}`);
+const list = readFileSync(new URL("repos.txt", import.meta.url), "utf8")
+  .split("\n").map((l) => l.trim()).filter((l) => l && !l.startsWith("#"));
+for (const r of list) if (!/^[\w.-]+\/[\w.-]+$/.test(r)) throw new Error(`bad entry in repos.txt: ${r}`);
+if (!list.length) throw new Error("cards/repos.txt is empty");
+const repos = await Promise.all(list.map(fetchRepo));
 
 const dir = new URL(".", import.meta.url);
 for (const f of readdirSync(dir)) if (f.endsWith(".svg")) rmSync(new URL(f, dir));
