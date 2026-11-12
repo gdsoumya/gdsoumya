@@ -49,17 +49,13 @@ You can use the website to generate badges: https://shields.io/
 
 ## Pinned Repositories
 <br/>
- <a href="https://github.com/argoproj/argo-cd">
-      <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=argoproj&repo=argo-cd&show_owner=true" alt="argo-cd"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <a href="https://github.com/gdsoumya/protomcp">
-      <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=gdsoumya&repo=protomcp&show_owner=true" alt="protomcp"></a>
+<!-- cards:start -->
+<a href="https://github.com/argoproj/argo-cd"><img width="45%" src="./cards/argoproj-argo-cd.svg" alt="argoproj/argo-cd"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/gdsoumya/protomcp"><img width="45%" src="./cards/gdsoumya-protomcp.svg" alt="gdsoumya/protomcp"></a>
 <br/><br/>
- <a href="https://github.com/gdsoumya/openarr">
-      <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=gdsoumya&repo=openarr&show_owner=true" alt="openarr"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <a href="https://github.com/litmuschaos/litmus">
-      <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=litmuschaos&repo=litmus&show_owner=true" alt="Litmus Chaos"></a>
+<a href="https://github.com/gdsoumya/openarr"><img width="45%" src="./cards/gdsoumya-openarr.svg" alt="gdsoumya/openarr"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/litmuschaos/litmus"><img width="45%" src="./cards/litmuschaos-litmus.svg" alt="litmuschaos/litmus"></a>
 <br/><br/>
- <a href="https://github.com/gdsoumya/rag-chat">
-      <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=gdsoumya&repo=rag-chat&show_owner=true" alt="rag-chat"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <a href="https://github.com/gdsoumya/NFTransit">
-      <img width="45%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=gdsoumya&repo=NFTransit&show_owner=true" alt="NFTransit"></a>
+<a href="https://github.com/gdsoumya/rag-chat"><img width="45%" src="./cards/gdsoumya-rag-chat.svg" alt="gdsoumya/rag-chat"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/gdsoumya/NFTransit"><img width="45%" src="./cards/gdsoumya-NFTransit.svg" alt="gdsoumya/NFTransit"></a>
+<!-- cards:end -->
